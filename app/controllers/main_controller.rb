@@ -4,3 +4,9 @@ class MainController < ApplicationController
         flash[:alert] = "Log in failed!"
     end
 end
+
+
+# PUSH TO GITHUB
+# git add .
+# git commit -m "type your commit message here"
+# git push origin master

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get "about", to: "about#index", as: :about #can change "about" to whatever. It is the url
 
+  get "password", to: "passwords#edit", as: :edit_password
+  patch "password", to: "password#update"
+  
   get "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
 
